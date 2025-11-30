@@ -626,7 +626,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Use event delegation to prevent duplicate listeners
     // Attach single listener to document that handles all button clicks
     document.addEventListener('click', function(e) {
-        const button = e.target.closest('.feature-btn, .benefit-btn');
+        const button = e.target.closest('.feature-btn, .benefit-btn, .legal-notice-btn');
         if (button) {
             e.stopPropagation();
             e.preventDefault();
