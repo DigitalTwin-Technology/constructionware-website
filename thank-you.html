@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Constructionware</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e5e7eb;
+            padding: 2rem;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            background: linear-gradient(145deg, rgba(30, 30, 30, 0.8) 0%, rgba(20, 20, 20, 0.9) 100%);
+            border-radius: 1.5rem;
+            padding: 3rem;
+            text-align: center;
+            border: 2px solid rgba(163, 230, 53, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 2rem;
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: #0f0f0f;
+            stroke-width: 3;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #a3e635;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d1d5db;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-box {
+            background: rgba(163, 230, 53, 0.1);
+            border-left: 4px solid #a3e635;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            color: #a3e635;
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-box ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .info-box ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #a3e635;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%);
+            color: #0f0f0f;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(163, 230, 53, 0.3);
+            margin-top: 1.5rem;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(163, 230, 53, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-container {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+
+        <h1>Thank You!</h1>
+        
+        <p>Your demo request has been successfully submitted. We've received your information and will get back to you shortly.</p>
+
+        <div class="info-box">
+            <h3>What Happens Next?</h3>
+            <ul>
+                <li>Our team will review your request within 24 hours</li>
+                <li>We'll reach out to schedule a convenient time for your demo</li>
+                <li>You'll receive a confirmation email at the address you provided</li>
+                <li>We'll prepare a customized demo based on your specific needs</li>
+            </ul>
+        </div>
+
+        <p><strong>Questions?</strong> Feel free to contact us at <a href="mailto:info@digitaltwin.technology" style="color: #a3e635; text-decoration: none;">info@digitaltwin.technology</a></p>
+
+        <a href="index.html" class="back-button">Return to Homepage</a>
+    </div>
+
+    <script>
+        // Auto-redirect to homepage after 30 seconds (optional)
+        // setTimeout(() => {
+        //     window.location.href = 'index.html';
+        // }, 30000);
+    </script>
+</body>
+</html>
+
